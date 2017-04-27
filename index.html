@@ -1,60 +1,67 @@
+<?php
+
 <!Doctype html>
 <html>
 	<head>
+    <meta charset="utf-8">
 		<title> Registro </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class="pagina">
-			<form >
-			Nombre: <br>
-			<input type="text" name="Nombre"><br>
-			Apellido: <br>
-			<input type="text" name="Apellido"><br>
-			Nombre de usuario: <br>
-			<input type="text" name="Nombre de usuario"><br>
-			Email: <br>
-			<input type="text" name="Email"><br>
-			Contraseña <br>
-			<input type="password" name="Contraseña"><br>
-			Confirmación de contraseña:<br>
-			<input type="password" name="Confirmación de contraseña"><br>
-			Sexo:<br>
-			<input type="radio" name="Sexo" value="Masculino" checked> Masculino<br>
-			<input type="radio" name="Sexo" value="Femenino" checked> Femenino<br>
-			Fecha de nacimiento: <br>
-			<select name= "Dia">
-  				<option value="1">1</option>
-  				<option value="2">2</option>
- 				<option value="3">3</option>
-  				<option value="4">4</option>
-  				<option value="5">5</option>
-  				<option value="6">6</option>
- 				<option value="7">7</option>
-  				<option value="8">8</option>
-  				<option value="9">9</option>
-  				<option value="10">10</option>
- 				<option value="11">11</option>
-  				<option value="12">12</option>
-  				<option value="13">13</option>
-  				<option value="14">14</option>
- 				<option value="15">15</option>
-  				<option value="16">16></option>
-  				<option value="17">17</option>
-  				<option value="18">18</option>
- 				<option value="19">19</option>
-  				<option value="20">20</option>
-  				<option value="21">21</option>
-  				<option value="22">22</option>
- 				<option value="23">23</option>
-  				<option value="24">24</option>
-  				<option value="25">25</option>
-  				<option value="26">26</option>
- 				<option value="27">27</option>
-  				<option value="28">28</option>
-  				<option value="29">29</option>
-  				<option value="30">30</option>
-  				<option value="31">31</option>
-			</select><br>
+		<div class="pagina container">
+
+			<form action="" method="get">
+			   Nombre: <br>
+			   <input type="text" name="nombre"><br>
+			   Apellido: <br>
+			   <input type="text" name="apellido"><br>
+			   Nombre de usuario: <br>
+			   <input type="text" name="nombre_de_usuario"></form></br>
+         <div class="input-group">
+             <span class="input-group-addon" id="basic-addon1">@</span>
+			       <input type="text" name="email" placeholder="Email"><br>
+          </div>
+			   Contraseña <br>
+			   <input type="password" name="contraseña"><br>
+			   Confirmación de contraseña:<br>
+			   <input type="password" name="confirmación_de_contraseña"><br>
+			   Sexo:<br>
+			   <input type="radio" name="Sexo" value="masculino" checked> Masculino<br>
+			   <input type="radio" name="Sexo" value="femenino" checked> Femenino<br>
+			   Fecha de nacimiento: <br>
+			   <select name= "Dia">
+  				  <option value="1">1</option>
+  				  <option value="2">2</option>
+ 				    <option value="3">3</option>
+  				  <option value="4">4</option>
+  				  <option value="5">5</option>
+  				  <option value="6">6</option>
+ 				    <option value="7">7</option>
+  				  <option value="8">8</option>
+  				  <option value="9">9</option>
+  				  <option value="10">10</option>
+ 				    <option value="11">11</option>
+  				  <option value="12">12</option>
+  				  <option value="13">13</option>
+  				  <option value="14">14</option>
+ 				    <option value="15">15</option>
+  				  <option value="16">16</option>
+  				  <option value="17">17</option>
+  				  <option value="18">18</option>
+ 				    <option value="19">19</option>
+  				  <option value="20">20</option>
+  				  <option value="21">21</option>
+  				  <option value="22">22</option>
+ 				    <option value="23">23</option>
+  				  <option value="24">24</option>
+  				  <option value="25">25</option>
+  				  <option value="26">26</option>
+ 				    <option value="27">27</option>
+  				  <option value="28">28</option>
+  				  <option value="29">29</option>
+  				  <option value="30">30</option>
+  				  <option value="31">31</option>
+			   </select><br>
 			<select name = "Mes">
   				<option value="Enero">Enero</option>
   				<option value="Febrero">Febrero</option>
@@ -75,9 +82,11 @@
  				<option value="1998">1998</option>
   				<option value="1997">1997</option>
 			</select><br>
+
 			<!-- Aca va lo de las categorias -->
 			Aceptación de terminos y condiciones
-			<input type="checkbox" name="Aceptar" value="Acepto"><br>
+			<input type="checkbox" name="aceptar" value="Acepto"><br>
+      <input type="submit" name="submit">
 
 			</form>
 		</div>
